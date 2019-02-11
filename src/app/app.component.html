@@ -1,0 +1,66 @@
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Logo</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item " *ngFor='let item of navigationBar'>
+      <a href="{{item?.Url}}" class="nav-link">{{item?.Lable}}</a>  
+    </li>
+  </ul>
+</nav>
+<br>
+<!---->
+<div>
+  <h1>im a programmer</h1>
+</div>
+
+
+
+<router-outlet></router-outlet>
+<!--navbar 2-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Logo</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item " *ngFor='let product of navigation' >
+      <a href="{{product?.Url}}" class="nav-link">{{product?.Label}}</a>  
+    </li>
+  </ul>
+</nav>
+<br>
+<!--navbar3-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark nav justify-content-end ">
+    <form class="form-inline justify-content-right" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>  
+  <ul class="navbar-nav ">
+    <li class="nav-item " *ngFor='let item of navigationBar'>
+      <a href="{{item?.Url}}" class="nav-link">{{item?.Lable}}</a>  
+    </li>
+  </ul>
+ 
+  </nav>
+  <br>
+  <hr>
+
+
+<!-- vavbar4-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-end">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Logo</a>
+  
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item " *ngFor='let item of navigatio' >
+        <a href="{{item?.Url}}" class="nav-link">{{item?.Label}}</a>  
+      </li>
+    </ul>
+  </nav>
+  {{navigatio|json}}

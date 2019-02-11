@@ -1,0 +1,23 @@
+
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+
+@Injectable()
+export class DataService {
+    constructor(private http: HttpClient){}
+
+    getNavbar(){
+        return this.http.get('assets/data/navbar.json');
+    }
+    getNavBar2(){
+        return this.http.get('assets/data/navBar2.json');
+    }
+    getNavbar4(){
+        return this.http.get('assets/data/navbar4.json');
+    }
+    
+   
+
+  
+   
+}

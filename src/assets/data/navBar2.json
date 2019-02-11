@@ -1,0 +1,7 @@
+[
+    { "Label":"Home","Url":"home"},
+    { "Label":"Explore","Url":"Explore"},
+    { "Label":"Create","Url":"create"},
+    { "Label":"Share","Url":"share"}
+
+]
