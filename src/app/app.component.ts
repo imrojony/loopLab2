@@ -3,6 +3,7 @@ import { DataService } from './data.service';
 import { Navbar } from './model/navbar';
 import { NavBar2 } from './model/navBar2';
 import { Navbar4 } from './model/navbar4';
+import { Carousel } from './model/carousel';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ export class AppComponent {
   navigationBar: Navbar[] = [];
   navigation: NavBar2[] =[];
   navigatio: Navbar4[] =[];
+  carousel: Carousel [] =[];
   constructor(private dataService: DataService) {
     this.dataService.getNavbar().subscribe(
       res=>{
@@ -30,6 +32,13 @@ export class AppComponent {
     this.dataService.getNavbar4().subscribe(
       res=>{
         this.navigatio=JSON.parse(JSON.stringify(res));
+        console.log(res);
+      }
+    );
+
+    this.dataService.getCarousel().subscribe(
+      res=>{
+        this.carousel=JSON.parse(JSON.stringify(res));
         console.log(res);
       }
     )

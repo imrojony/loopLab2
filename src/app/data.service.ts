@@ -15,6 +15,9 @@ export class DataService {
     getNavbar4(){
         return this.http.get('assets/data/navbar4.json');
     }
+    getCarousel(){
+        return this.http.get('assets/data/carousel.json');
+    }
     
    
 
