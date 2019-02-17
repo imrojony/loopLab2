@@ -5,6 +5,7 @@ import { NavBar2 } from './model/navBar2';
 import { Navbar4 } from './model/navbar4';
 import { Carousel } from './model/carousel';
 import { Valentine } from './model/valentine';
+import { Menu } from './model/menu';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { Valentine } from './model/valentine';
 })
 export class AppComponent {
   title = 'loopLab';
+  menu:Menu;
   navigationBar: Navbar[] = [];
   navigation: NavBar2[] =[];
   navigatio: Navbar4[] =[];
@@ -50,6 +52,13 @@ export class AppComponent {
         console.log(res);
       }
     );
+    this.dataService.getMenu().subscribe(
+      res=>{
+        this.menu=JSON.parse(JSON.stringify(res));
+        console.log(res)
+      }
+    );
+
   }
 }
 

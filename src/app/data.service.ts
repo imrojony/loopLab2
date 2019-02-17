@@ -23,7 +23,9 @@ export class DataService {
     }
     
    
-
+    getMenu(){
+        return this.http.get('assets/data/menu.json');
+    }
   
    
 }
