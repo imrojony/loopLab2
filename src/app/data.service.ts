@@ -18,6 +18,9 @@ export class DataService {
     getCarousel(){
         return this.http.get('assets/data/carousel.json');
     }
+    getValentine(){
+        return this.http.get('assets/data/valentine.json');
+    }
     
    
 

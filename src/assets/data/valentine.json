@@ -1,0 +1,21 @@
+
+[
+    {
+        "CatogoryName":"Him",
+        "Img":"assets/images/him.png",
+        "url":""
+    },
+
+    {
+        "CatogoryName":"her",
+        "Img":"assets/images/him.png",
+        "url":""
+    },
+
+    {
+        "CatogoryName":"dog",
+        "Img":"assets/images/him.png",
+        "url":""
+    }
+
+]

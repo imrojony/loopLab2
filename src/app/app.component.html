@@ -125,25 +125,19 @@
     </a>
   
   </div>
+  
 
   <!--menu-->
   <section id="menu">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img class="img-responsive" src="assets/images/img1.png" alt="">
+      <div class="row"  >
+        <div class="col-md-4"*ngFor='let item of valentine' >
+          <img src="{{item?.Img}}" alt="">
         </div>
-        <div class="col-md-4">
-          <img src="assets/images/img1.png" alt="">
-        </div>
-        <div class="col-md-4">
-          <img src="assets/images/img1.png" alt="">
-        </div>
+        <h1>{{item?.CatogoryName}}</h1>
       </div>
     </div>
   </section>
   <hr>
   <hr>
-  <div>
-    <h1>my name is a rojony</h1>
-  </div>
+  
