@@ -6,6 +6,11 @@ import { HttpClient } from "@angular/common/http";
 export class DataService {
     constructor(private http: HttpClient){}
 
+
+    getProducts() {
+        return this.http.get('/assets/data/products.json');
+    }
+
     getNavbar(){
         return this.http.get('assets/data/navbar.json');
     }
@@ -28,4 +33,7 @@ export class DataService {
     }
   
    
+}
+ValentineDayGif(){
+    return this.http.get('assets/data/valentineDayGift.json')
 }

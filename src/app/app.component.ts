@@ -20,6 +20,7 @@ export class AppComponent {
   navigatio: Navbar4[] =[];
   carousel: Carousel [] =[];
   valentine:Valentine[] =[];
+  
   constructor(private dataService: DataService) {
     this.dataService.getNavbar().subscribe(
       res=>{
@@ -58,7 +59,7 @@ export class AppComponent {
         console.log(res)
       }
     );
-
+    
   }
 }
 
